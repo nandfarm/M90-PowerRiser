@@ -3,7 +3,7 @@ PowerRiser – NVMe 2230 and 2242 Expansion board for Lenovo Tiny 6 Series M90q 
 
 ![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Screenshot%202025-10-08%20171447.png)
 
-This is the first UNTESTED version of the M90 PowerRiser. Like the previous one it is a custom-designed passive riser board that allows you to break out the proprietary Lenovo Tiny 6 series PCIe connector into a standard open-ended x8 PCIe slot, while also providing an additional M.2 NVMe slot for further storage expansion. This board was specifically designed for select Lenovo Tiny 6 series systems (10th/11th gen), such as:
+This is the first ~UNTESTED~ TESTED version of the M90 PowerRiser. Like the previous one it is a custom-designed passive riser board that allows you to break out the proprietary Lenovo Tiny 6 series PCIe connector into a standard open-ended x8 PCIe slot, while also providing an additional M.2 NVMe slot for further storage expansion. This board was specifically designed for select Lenovo Tiny 6 series systems (10th/11th gen), such as:
 
 - ThinkCentre M90q Gen 1 and Gen 2
 
