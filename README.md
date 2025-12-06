@@ -25,16 +25,19 @@ The first prototype boards have arrived and I could not wait to solder one to te
 
 ![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Media%20(77).jpg)
 
-~Issue no 1: It appears that the chassy has different folds than the m720q family of devices and the pertruding pins of the FAN connector on the bottom side of the board touch the chassy. This is a problem since no one wants a short so the fan header needs to move somewhere else or, find a surface mount version. ~
+~Issue no 1: It appears that the chassy has different folds than the m720q family of devices and the pertruding pins of the FAN connector on the bottom side of the board touch the chassy. This is a problem since no one wants a short so the fan header needs to move somewhere else or, find a surface mount version.~
+
 Issue no 1: Has been solved by moving the connector and rotating it 180 degrees. 
 
 
 ![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Media%20(75).jpg)
 
 ~Issue no 2: I have routed some of the low speed # detect wires poorly and the board was not initially detected by the device. After some adjustments with a box cutter and the soldering iron, the M90q detects both the PCIe PERC and the NVMe SSD. This needs to be corrected in the next hardware version.~
+
 Issue no 2: Has been solved in the latest revision.
 
 ~Potential issue no 3: The M90q detects (lspci on Ubuntu) the NVMe but downgrades it to PCIe gen 3 (not 4) (LnkCap says PCIe4 capable and LnkSta says PCIe3 (Downgrade)). R/W speeds are matching PCIe gen 3 speeds and are stable. Not sure if the Tiny is not capable of PCIe gen 4 or there is somethign wrong with my board. The high speed trace impedances have been tested on a signal analyzer and are within spec. Did not find a way to force PCIe gen 4 speeds on the device yet. Will keep investigating.~
+
 Potential issue no 3: Apparently this is normal behaviour as the PCH of this generation of boards is only PCIe 3.0 compatible. So the NVMe SSDs connected to this slot will run at 3.0 speeds and not at 4.0 like the ones on the motherboard. 
 
 ---------------------------------------
@@ -45,8 +48,10 @@ Other things:
   ![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Media%20(71).jpg)
   ![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Media%20(69).jpg)
 - There seems to be a way to bifurcate the x8 connection in two x4 onnectors without any hardware modiffication on the motherboard. Have to explore this further since this could lead to the ability to connect up to 5 NVMes in one tiny device. Would be great for a NAS with RAID 5.
+- 
   ↑ There is and the new board is under test. Will release once it has been thoroughly tested.
 - Have to see if the USB2 port is host or device as it could be interesting for those who want to add something extra like a fan speed controller.
+- 
   ↑ Will not be implemented in the current version.
 
 I think there is value in creating this riser as it has some cool advantages: 
