@@ -1,6 +1,8 @@
 # M90-PowerRiser
 PowerRiser – NVMe 2230 and 2242 Expansion board for Lenovo Tiny 6 Series M90q Gen 1 and 2 and P340 and P350
 
+<a href="https://lectronz.com/stores/nandfarm" alt="I sell on Lectronz"><img src="https://lectronz-images.b-cdn.net/static/badges/i-sell-on-lectronz-small.png" /></a>
+
 <a href="https://www.tindie.com/stores/nandfarm/?ref=offsite_badges&utm_source=sellers_NandFarm&utm_medium=badges&utm_campaign=badge_small"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-smalls.png" alt="I sell on Tindie" width="200" height="55"></a>
 
 ![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Screenshot%202025-10-08%20171447.png)
