@@ -21,6 +21,8 @@ This is the first ~UNTESTED~ TESTED version of the M90 PowerRiser. Like the prev
 
 - ThinkStation P350 Tiny
 
+These boards are compatible with the following Lenovo riser FRU code: 5C50W00877. Basically, this riser will do the same job and will allow you access to an extra 4-lane NVMe M.2 slot, supporting all NVMe M.2 form factors, at PCIe 3.0 speeds.
+
 ⚠ Please note: The additional M.2 slot supports only PCIe NVMe drives, not SATA drives.
 
 ## Prototype Updates (01/12/2025)
