@@ -9,7 +9,9 @@ Best for European locations (EUR currency): </br>
 Best for International locations (USD currency): </br>
 <a href="https://www.tindie.com/stores/nandfarm/?ref=offsite_badges&utm_source=sellers_NandFarm&utm_medium=badges&utm_campaign=badge_small"><img src="https://static.tindie.com/badges/tindie-smalls.png" alt="I sell on Tindie" width="200" height="55"></a>
 
-![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Screenshot%202025-10-08%20171447.png)
+![Main photo of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/powerriser-lenovo-m90q-riser-m2-nvme-main.jpg)
+
+![Schematic of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/powerriser-lenovo-m90q-riser-m2-nvme-schematic.png)
 
 This is the first ~UNTESTED~ TESTED version of the M90 PowerRiser. Like the previous one it is a custom-designed passive riser board that allows you to break out the proprietary Lenovo Tiny 6 series PCIe connector into a standard open-ended x8 PCIe slot, while also providing an additional M.2 NVMe slot for further storage expansion. This board was specifically designed for select Lenovo Tiny 6 series systems (10th/11th gen), such as:
 
@@ -21,24 +23,22 @@ This is the first ~UNTESTED~ TESTED version of the M90 PowerRiser. Like the prev
 
 ⚠ Please note: The additional M.2 slot supports only PCIe NVMe drives, not SATA drives.
 
-⚠ Testing is ongoing for this and there will probably be updated versions. Once I am happy with the results, I can make it available on Tindie if there is interest. 
-
 ## Prototype Updates (01/12/2025)
 
 Ok some updates are required. 
 
 The first prototype boards have arrived and I could not wait to solder one to test it. 
 
-![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Media%20(68).jpg)
+![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/powerriser-lenovo-m90q-riser-m2-nvme-front-3d-render.png)
 
-![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Media%20(77).jpg)
+![Bottom render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/powerriser-lenovo-m90q-riser-m2-nvme-back-3d-render.png)
 
 ~Issue no 1: It appears that the chassy has different folds than the m720q family of devices and the pertruding pins of the FAN connector on the bottom side of the board touch the chassy. This is a problem since no one wants a short so the fan header needs to move somewhere else or, find a surface mount version.~
 
 Issue no 1: Has been solved by moving the connector and rotating it 180 degrees. 
 
 
-![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Media%20(75).jpg)
+![Top view of installed board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/powerriser-lenovo-m90q-riser-m2-nvme-installed-top-ssd.jpg)
 
 ~Issue no 2: I have routed some of the low speed # detect wires poorly and the board was not initially detected by the device. After some adjustments with a box cutter and the soldering iron, the M90q detects both the PCIe PERC and the NVMe SSD. This needs to be corrected in the next hardware version.~
 
@@ -53,8 +53,8 @@ Other things:
 
 - There is no way to put the NVMe connector on the side of the riser like the m720q version of the riser since there is no space to place even the 2230 sized NVMe. The good news by putting this vertically on the riser, you can now insert 2280 sized SSDs without space constraints. The bad news is that the vertical M.2 slot can not be sourced easily/cheaply so would add an extra assembly step.
 - The position of the M.2 slot is perfectly placed to clear the wifi/BT card and to have the posibility to add a longer card on the x8 PCIe slot AS LONG AS there is nothing under the PCIe board and there is no heatsink on the NVMe. (excuse the bothced fan added to the PERC card :D )
-  ![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Media%20(71).jpg)
-  ![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Media%20(69).jpg)
+  ![Side view of clearance of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/powerriser-lenovo-m90q-riser-m2-nvme-side-clearance-installed.jpg)
+  ![Top view of clearence of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/powerriser-lenovo-m90q-riser-m2-nvme-top-installed.jpg)
 - There seems to be a way to bifurcate the x8 connection in two x4 onnectors without any hardware modiffication on the motherboard. Have to explore this further since this could lead to the ability to connect up to 5 NVMes in one tiny device. Would be great for a NAS with RAID 5.
 - 
   ↑ There is and the new board is under test. Will release once it has been thoroughly tested.
@@ -71,7 +71,7 @@ I think there is value in creating this riser as it has some cool advantages:
 - no need for clock buffer/divider as the device now breaks out 4x 100MHz clock sources
 - there are connections for the power and reset button that could be used if a custom chassy is made.
 
-![Top render of the board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/Media%20(73).jpg)
+![Side view of the installed board](https://github.com/nandfarm/M90-PowerRiser/blob/main/Photos/powerriser-lenovo-m90q-riser-m2-nvme-installed-side.jpg)
 
 
 ## Usage & Limitations
@@ -83,6 +83,8 @@ NVMe drives supported: 2230, 2242 and 2260 (2280 not tested during mockup).
 This riser is only compatible with the Lenovo Tiny 6 series models listed above.
 
 SATA M.2 drives are not supported on the added M.2 slot.
+
+The riser is capable of accepting x16 PCIe boards but in order for them to be detected, the "PCIe_Detect" solder bridge on the back needs to be bridged.
 
 ## Project Origin & Intent
 This project was built from personal need, trial, and experimentation. 
